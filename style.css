@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    width: 100%;
+    width: 100vh;
     height: 100%;
     background-color: #333;
     background-image: url(ressource/bg.jpg);
@@ -31,11 +31,26 @@ body {
     border: solid #333 5px;
     border-radius: 3px;
     background-color: rgba(76, 76, 76, 0.9);
-    margin-left: 340px;
+    left: 30%;
+    right: 500px;
     top: 40%;
     padding: 20px;
     text-align: center;
     overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 768px) {
+    .cadre {
+        box-sizing: content-box;
+        border: solid #333 5px;
+        border-radius: 3px;
+        background-color: rgba(76, 76, 76, 0.9);
+        left: 2%;
+        margin-right: 10px;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+    
 }
 
 h1{
