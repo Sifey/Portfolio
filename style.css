@@ -26,12 +26,12 @@ body {
 .cadre {
     position: relative;
     box-sizing: content-box;
-    width: 20%;
-    height: 5%;
+    width: 240px;
+    height: 35px;
     border: solid #333 5px;
-    border-radius: 10px;
-    background-color: rgba(76, 76, 76, 0.8);
-    left: 40%;
+    border-radius: 3px;
+    background-color: rgba(76, 76, 76, 0.9);
+    margin-left: 340px;
     top: 40%;
     padding: 20px;
     text-align: center;
