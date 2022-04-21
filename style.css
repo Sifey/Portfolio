@@ -31,7 +31,7 @@ body {
     border: solid #333 5px;
     border-radius: 3px;
     background-color: rgba(76, 76, 76, 0.9);
-    left: 30%;
+    left: 350px;
     right: 500px;
     top: 40%;
     padding: 20px;
@@ -39,13 +39,13 @@ body {
     overflow-wrap: break-word;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 626px) {
     .cadre {
         box-sizing: content-box;
         border: solid #333 5px;
         border-radius: 3px;
         background-color: rgba(200, 195, 195, 0.9);
-        left: 5%;
+        left: 30%;
         margin-right: 10px;
         text-align: center;
         overflow-wrap: break-word;
