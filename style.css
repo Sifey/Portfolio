@@ -44,8 +44,8 @@ body {
         box-sizing: content-box;
         border: solid #333 5px;
         border-radius: 3px;
-        background-color: rgba(76, 76, 76, 0.9);
-        left: 2%;
+        background-color: rgba(200, 195, 195, 0.9);
+        left: 5%;
         margin-right: 10px;
         text-align: center;
         overflow-wrap: break-word;
