@@ -46,18 +46,18 @@
 
                                         if(!(isset($nom) && isset($prenom) && isset($mail) && isset($objet) && isset($message))){
                                             echo '<h3>Veuillez remplir tous les champs !</h3>';
-                                            header("refresh:4 ; url= portfolio/index.html");
+                                            header("refresh:4 ; url= Portfolio/index.html");
                                             exit();
                                         }
 
 
                                         echo '<h3>Succès</h3>';
-                                        header("refresh:4 ; url= portfolio/index.html");
+                                        header("refresh:4 ; url= Portfolio/index.html");
                                         exit();
                                     }
                                     else {
                                         echo '<h3>Veuillez remplir tous les champs !</h3>';
-                                        header("refresh:4 ; url= portfolio/index.html");
+                                        header("refresh:4 ; url= Portfolio/index.html");
                                         exit();
                                     }
                                 ?>
