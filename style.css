@@ -99,6 +99,9 @@ body {
         padding: 0;
     }
 
+    .presentation {
+        height: 620px;
+    }
     .presentation-img {
         box-shadow: none;
     }
@@ -196,6 +199,7 @@ span.title   {
     background-color: #121212;
     color: #fff;
     overflow: hidden;
+    margin: 10px;
   }
   
   .slide-content {
