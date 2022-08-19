@@ -61,7 +61,6 @@ function displaySlide(index) {
 
 function slideOut(index) {
     const obj = sliderObject[index];
-    console.log(obj);
 
     slideAnimation({
         el : obj.child[obj.currentIndex],
@@ -91,7 +90,6 @@ function slideOut(index) {
 
 function slideIn(index) {
     const obj = sliderObject[index];
-    console.log(obj);
 
     const anim = {
         el : obj.child[obj.currentIndex],
@@ -110,7 +108,6 @@ function slideIn(index) {
         obj.child[obj.previousIndex].classList.remove("active");
         obj.child[obj.previousIndex].style.display = "none";
         obj.child[obj.previousIndex].style.transform = "translateX(0%)";
-        console.log(obj.child[obj.previousIndex]);
     
         obj.child[obj.currentIndex].classList.add("active");
         obj.lock = false;
@@ -119,6 +116,7 @@ function slideIn(index) {
 }
 
 function slideAnimation(anim) {
+    console.log(anim);
     for (const prop in anim.props) {
         anim.el.style[prop] = anim.props[prop];
     }
