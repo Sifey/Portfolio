@@ -1,5 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script defer src="slide.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HeadBand -->
+    <section class="headBand">
+        <h1><span class="title">Mon Portfolio</span></h1>
+    </section>
+    <!-- NavBar -->
+    <nav class="nav-sticky">
+        <ul>
+            <li class="nav-item"><a href="#acccueil" class="nav-link">Accueil</a></li>
+            <li class="nav-item"><a href="#projets" class="nav-link">Projets</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Accueil -->
+    <section class="accueil" id="accueil">
+        <div class="container">
+            <div class="heading">
+                <h1>accueil</h1>
+            </div>
+            <div class="presentation">
+                <div class="presentation-img">
+                    <div class="presentation-txt"><p><span>Jonathan BAYLE</span>, étudiant en 1ère année de <span>master informatique</span> à l'UFR Sciences et Techniques de Brest.</p><p>On me qualifie comme quelqu'un de <span>curieux</span>, <span>sérieux</span>, <span>investi</span>, qui va au bout de ce qu'il entreprend.</p><p>Le domaine dans lequel je souhaite me spécialiser est celui du <span>développement Front-End</span>.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projet" id="projet">
+        <div class="container">
+            <div class="heading">
+                <h1>Projet</h1>
+            </div>
+        <!-- Projets -->
+        <div class="grid-container">
+                <!-- Projet 1 : Showroom -->
+                <div class="slider-container" id="showroom">
+                    <div class="slide-content active">
+                      <img src="./ressource/projets/showroom/showroom_accueil.png" alt="photo de chat" class="slide-img">
+                      <h1 class="slide-title"> Slide 1</h1>
+                      <h2 class="slide-subtitle">Subtitle</h2>
+                      <div class="slide-btn">Subscribe</div>
+                    </div>
+                    <div class="slide-content">
+                      <img src="./ressource/projets/showroom/showroom_admin.png" alt="photo de chat" class="slide-img">
+                      <h1 class="slide-title">Slide 2</h1>
+                      <h2 class="slide-subtitle">Subtitle</h2>
+                      <div class="slide-btn">Subscribe</div>
+                    </div>
+                    <div class="slide-content">
+                      <img src="./ressource/projets/showroom/showroom_element.png" alt="photo de chat" class="slide-img">
+                      <h1 class="slide-title">Slide 3</h1>
+                      <h2 class="slide-subtitle">Subtitle</h2>
+                      <div class="slide-btn">Subscribe</div>
+                    </div>
+                    <div class="slide-content">
+                      <img src="./ressource/projets/showroom/showroom_presentation.png" alt="photo de chat" class="slide-img">
+                      <h1 class="slide-title">Slide 4</h1>
+                      <h2 class="slide-subtitle">Subtitle</h2>
+                      <div class="slide-btn">Subscribe</div>
+                    </div>
+              
+                    <a class="previous" id="showroom"><img src="./ressource/left-chevron.svg" alt="passer à la slide précédente"></a>
+                    <a class="next" id="showroom"><img src="./ressource/right-chevron.svg" alt="passer à la slide suivant"></a>
+                  </div>
+                <!-- Projet 2 : Web4Event -->
+                <div class="slider-container" id="web4event">
+                    <div class="slide-content active">
+                      <img src="./ressource/projets/web4Event/web_accueil.png" alt="photo de chat" class="slide-img">
+                      <h1 class="slide-title"> Slide 1</h1>
+                      <h2 class="slide-subtitle">Subtitle</h2>
+                      <div class="slide-btn">Subscribe</div>
+                    </div>
+                    <div class="slide-content">
+                      <img src="./ressource/projets/web4Event/web_invite.png" alt="photo de chat" class="slide-img">
+                      <h1 class="slide-title">Slide 2</h1>
+                      <h2 class="slide-subtitle">Subtitle</h2>
+                      <div class="slide-btn">Subscribe</div>
+                    </div>
+                    <div class="slide-content">
+                      <img src="./ressource/projets/web4Event/web_prog.png" alt="photo de chat" class="slide-img">
+                      <h1 class="slide-title">Slide 3</h1>
+                      <h2 class="slide-subtitle">Subtitle</h2>
+                      <div class="slide-btn">Subscribe</div>
+                    </div>
+                    <div class="slide-content">
+                      <img src="./ressource/projets/web4Event/web_session.png" alt="photo de chat" class="slide-img">
+                      <h1 class="slide-title">Slide 4</h1>
+                      <h2 class="slide-subtitle">Subtitle</h2>
+                      <div class="slide-btn">Subscribe</div>
+                    </div>
+              
+                    <a class="previous" id="web4event"><img src="./ressource/left-chevron.svg" alt="passer à la slide précédente"></a>
+                    <a class="next" id="web4event"><img src="./ressource/right-chevron.svg" alt="passer à la slide suivant"></a>
+                  </div>
+                <!-- Projet 3 : Stage SCIManager -->
+                <div class="slider-container" id="sciManager">
+                    <div class="slide-content active">
+                      <img src="./ressource/bg.jpg" alt="photo de chat" class="slide-img">
+                      <h1 class="slide-title"> Slide 1</h1>
+                      <h2 class="slide-subtitle">Subtitle</h2>
+                      <div class="slide-btn">Subscribe</div>
+                    </div>
+                    <div class="slide-content">
+                      <img src="./ressource/bg.jpg" alt="photo de chat" class="slide-img">
+                      <h1 class="slide-title">Slide 2</h1>
+                      <h2 class="slide-subtitle">Subtitle</h2>
+                      <div class="slide-btn">Subscribe</div>
+                    </div>
+                    <div class="slide-content">
+                      <img src="./ressource/bg.jpg" alt="photo de chat" class="slide-img">
+                      <h1 class="slide-title">Slide 3</h1>
+                      <h2 class="slide-subtitle">Subtitle</h2>
+                      <div class="slide-btn">Subscribe</div>
+                    </div>
+              
+                    <a class="previous" id="sciManager"><img src="./ressource/left-chevron.svg" alt="passer à la slide précédente"></a>
+                    <a class="next" id="sciManager"><img src="./ressource/right-chevron.svg" alt="passer à la slide suivant"></a>
+                  </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +149,11 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <!-- HeadBand -->
+        HeadBand
         <section class="headBand">
             <h1><span class="title">Mon Portfolio</span></h1>
         </section>
-        <!-- NavBar -->
+        NavBar
         <nav class="navbar nav-sticky navbar-expand-lg bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand text-light" href="#"></a>
@@ -35,7 +175,7 @@
                 </div>
             </div>
         </nav>
-        <!-- Accueil -->
+        Accueil
         <section class="accueil" id="accueil">
             <div class="container">
                 <div class="row">
@@ -75,7 +215,7 @@
                 </div>
             </div>
         </section>
-        <!-- Projets -->
+        Projets
         <section class="projet" id="projet">
             <div class="container">
                 <div class="row">
@@ -88,7 +228,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <!-- Projet 1 : Showroom -->
+                    Projet 1 : Showroom
                     <div class="col-md-4">
                         <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -112,7 +252,7 @@
                             </button>
                         </div>
                     </div>
-                    <!-- Projet 2 : Web4Event -->
+                    Projet 2 : Web4Event
                     <div class="col-md-4">
                         <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -136,7 +276,7 @@
                             </button>
                         </div>
                     </div>
-                    <!-- Projet 3 : Stage SCIManager -->
+                    Projet 3 : Stage SCIManager
                     <div class="col-md-4">
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -176,8 +316,7 @@
             <div class="container">
                 <div class="row">
                     <div class="contact-form">
-                        <a href="send_mail.html">mail</a>
-                        <form action="send_mail.html" method="post">
+                        <form action="send_mail.php" method="post">
                             <div class="row">
                                 <div class="col-md-6">
                                     <label for="nom" class="form-label">Nom</label>
@@ -209,4 +348,4 @@
         </section>
     </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-</html>
+</html> -->

@@ -35,7 +35,32 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="heading">
-                                <h1>Send Mail</h1>
+                                <?php
+                                    if($_POST['nom'] && $_POST['prenom'] && $_POST['mail'] &&$_POST['objet'] && $_POST['message']) {
+                                        $nom=htmlspecialchars(addslashes($_POST['nom']));
+                                        $prenom=htmlspecialchars(addslashes($_POST['prenom']));
+                                        $mail=htmlspecialchars(addslashes($_POST['mail']));
+                                        $objet=htmlspecialchars(addslashes($_POST['objet']));
+                                        $message=htmlspecialchars(addslashes($_POST['message']));
+
+
+                                        if(!(isset($nom) && isset($prenom) && isset($mail) && isset($objet) && isset($message))){
+                                            echo '<h3>Veuillez remplir tous les champs !</h3>';
+                                            header("refresh:4 ; url= index.html");
+                                            exit();
+                                        }
+
+
+                                        echo '<h3>Succès</h3>';
+                                        header("refresh:4 ; url= index.html");
+                                        exit();
+                                    }
+                                    else {
+                                        echo '<h3>Veuillez remplir tous les champs !</h3>';
+                                        header("refresh:4 ; url= index.html");
+                                        exit();
+                                    }
+                                ?>
                             </div>
                     </div>
                 </div>

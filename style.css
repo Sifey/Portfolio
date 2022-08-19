@@ -22,16 +22,90 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    /* background-image: url(ressource/bg.jpg);
-    background-size: cover;
-    background-position: center; */
     background-repeat: no-repeat;
 }
 
 .nav-sticky {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #333;
+    height: 45px;
     position: sticky;
     top: 0;
     z-index: 2;
+}
+
+.nav-sticky li {
+    display: inline;
+    list-style-type: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: beige;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.nav-item:not(:last-child){
+    margin-right: 25px;
+}
+
+.container {
+    padding: 20px 150px;
+}
+
+.presentation {
+    margin-top: 40px;
+    height: 600px;
+}
+
+.presentation-img {
+    position: relative;
+    margin: 0 auto;
+    background-image: url(./ressource/presentation/jonathan.jpg);
+    background-size: cover;
+    background-position: center;
+    width: clamp(300px, 40vw, 400px);
+    height: 450px;
+    border-radius: 5px;
+    box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.presentation-txt {
+    position: absolute;
+    background-color: #8AA8CC;
+    width: 300px;
+    padding: 15px;
+    bottom: -150px;
+    right: calc(-1 * clamp(300px, 40vw, 400px) /4);
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.presentation-txt p {
+    font-family: Open sans, sans-serif;
+}
+
+.presentation-txt span {
+    font-weight: 500;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 0;
+    }
+
+    .presentation-img {
+        box-shadow: none;
+    }
+
+    .presentation-txt {
+        right: 0;
+    }
 }
 
 .form-group {
@@ -86,14 +160,6 @@ span.title   {
     justify-content: center;
 }
 
-.grid {
-    padding: 10px;
-}
-
-.heading {
-    text-align: center;
-}
-
 .container.form {
     width: 100vh;
     height: 100vh;
@@ -102,7 +168,18 @@ span.title   {
     padding-top: 200px;
 }
 
+.grid {
+    padding: 10px;
+}
+
+.heading {
+    text-align: center;
+}
+
+
 .heading h1 {
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    color: #333;
     text-transform: uppercase;
     display: inline;
     font-size: 3rem;
@@ -110,7 +187,99 @@ span.title   {
     border-bottom: 3px double #333;
 }
 
-
+.slider-container {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: clamp(300px, 60vw, 600px);
+    height: 500px;
+    background-color: #121212;
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  .slide-content {
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    translate: -50% -55%;
+    text-align: center;
+  }
+  
+  .slide-content.active {
+    display: block;
+  }
+  
+  .slide-content img {
+    object-fit: cover;
+    object-position: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  
+  .slide-img {
+    margin-top: 50px;
+  }
+  
+  .slide-title {
+    margin-top: 22px;
+    color: #dcdcdc;
+    font-size: 25px;
+  }
+  
+  .slide-subtitle {
+    margin-top: 10px;
+    font-size: 20px;
+    color: gray;
+    font-weight: 300;
+  }
+  
+  .slide-btn {
+    margin-top: 40px;
+    width: 200px;
+    text-align: center;
+    padding: 10px 15px;
+    color: #cccccc;
+    border: 2px solid gray;
+    font-size: 24px;
+    border-radius: 2px;
+    cursor: pointer;
+    z-index: 100;
+    pointer-events: none;
+  }
+  
+  .previous, .next {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .previous {
+    left: 30px;
+  }
+  
+  .next {
+    right: 30px;
+  }
+  
+  .previous img, .next img {
+    pointer-events: none;
+    width: 50%;
+  }
+  
+  .previous:hover, .next:hover {
+    background-color: rgba(102, 102, 102, 0.193);
+  }
+  
 
 /* .container {
     display: flex;
