@@ -6,6 +6,8 @@
 
 html {
     font-family: Arial, Helvetica, sans-serif; 
+    scroll-padding-top: 40px;
+    scroll-behavior: smooth;
 }
 
 body {
