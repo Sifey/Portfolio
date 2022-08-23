@@ -116,7 +116,6 @@ function slideIn(index) {
 }
 
 function slideAnimation(anim) {
-    console.log(anim);
     for (const prop in anim.props) {
         anim.el.style[prop] = anim.props[prop];
     }
