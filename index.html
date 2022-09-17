@@ -7,13 +7,25 @@
     <title>Portofolio</title>
     
     <link rel="stylesheet" href="style.css">
+    <!-- <script defer src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script> -->
     <script defer src="slide.js"></script>
+    <script defer src="form.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Lato:wght@100;300;400;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="loader">
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <div class="loaderMessage">
+            <h2><span>Portfolio</span> en Construction</h2>
+        </div> 
+    </div>
     <!-- HeadBand -->
     <section class="headBand">
         <h1><span class="title">Mon Portfolio</span></h1>
@@ -34,7 +46,7 @@
             </div>
             <div class="presentation">
                 <div class="presentation-img">
-                    <div class="presentation-txt"><p><span>Jonathan BAYLE</span>, étudiant en 1ère année de <span>master informatique</span> à l'UFR Sciences et Techniques de Brest.</p><p>On me qualifie comme quelqu'un de <span>curieux</span>, <span>sérieux</span>, <span>investi</span>, qui va au bout de ce qu'il entreprend.</p><p>Le domaine dans lequel je souhaite me spécialiser est celui du <span>développement Front-End</span>.</p></div>
+                    <div class="presentation-txt"><p><span>Jonathan BAYLE</span>, étudiant en 1ère année de <span>master informatique</span> à l'UFR Sciences et Techniques de Brest.</p><p>On me qualifie comme quelqu'un de <span>curieux</span>, <span>sérieux</span>, <span>investi</span>, qui va au bout de ce qu'il entreprend.</p><p>Le domaine dans lequel je souhaite me spécialiser est celui du <span>développement Full-Stack</span>.</p></div>
                 </div>
             </div>
         </div>
@@ -150,34 +162,52 @@
             <div class="heading">
                 <h1>Contact</h1>
             </div>
-            <div class="contact">
-                <form>
+            <div class="contact-content">
+                <div class="contact-informations">
+                    <p>TRALALAL</p>
+                    <p>TRALALAL</p>
+                    <p>TRALALAL</p>
+                    <p>TRALALAL</p>
+                    <p>TRALALAL</p>
+                    <p>TRALALAL</p>
+                </div>
+                <div class="contact-informations">
+                    <p>TRALALAL</p>
+                    <p>TRALALAL</p>
+                    <p>TRALALAL</p>
+                    <p>TRALALAL</p>
+                    <p>TRALALAL</p>
+                    <p>TRALALAL</p>
+                </div>
+                
+                
+                <!-- <form>
                     <div class="mixed-group">
                         <div class="form-group">
                             <label for="nom">Nom :</label>
-                            <input type="text" id="nom" placeholder="nom...">
+                            <input type="text" id="nom" name="nom" placeholder="nom...">
                         </div>
                         <div class="form-group">
                             <label for="prenom">Prénom :</label>
-                            <input type="text" id="prenom" placeholder="prénom...">
+                            <input type="text" id="prenom" name="prenom" placeholder="prénom...">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="mail">Adresse email :</label>
-                        <input type="email" id="mail" placeholder="adresse email...">
+                        <input type="email" id="email" name="email" placeholder="adresse email...">
                     </div>
                     <div class="form-group">
                         <label for="object">Objet :</label>
-                        <input type="text" id="object" placeholder="objet...">
+                        <input type="text" id="object" name="object" placeholder="objet...">
                     </div>
                     <div class="form-group">
                         <label for="message">Message :</label>
                         <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Écrire un message..." ></textarea>
                     </div>
                     <div class="form-group">
-                        <button type="button">Envoyer</button>
+                        <button type="submit">Envoyer</button>
                     </div>
-                </form>
+                </form> -->
             </div>
         </div>
     </section>
