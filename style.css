@@ -426,18 +426,39 @@ form {
 }
 
 .img-loader {
-    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+    color: #505050;
 }
 
 .img-loader img {
     width: 150px;
+}
+
+.hammer img{
+    width: 200px;
+    margin-right: 30px;
     transform: rotate(50deg);
     animation: hit 1s infinite ease-out alternate;
+}
+
+.cog img{
+    width: 100px;
+    animation: spin 4s infinite;
 }
 
 @keyframes hit {
     to{
         rotate: 50deg;
+    }
+}
+
+@keyframes spin {
+    to {
+        rotate: 360deg;
     }
 }
 
