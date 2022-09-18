@@ -425,6 +425,23 @@ form {
     background: rgb(248, 213, 161);
 }
 
+.img-loader {
+    margin-bottom: 100px;
+}
+
+.img-loader img {
+    width: 150px;
+    transform: rotate(50deg);
+    animation: hit 1s infinite ease-out alternate;
+}
+
+@keyframes hit {
+    to{
+        rotate: 50deg;
+    }
+}
+
+
 .dots {
     display: flex;
     flex-direction: row;
